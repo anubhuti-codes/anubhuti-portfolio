@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anubhuti Mishra | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container nav-container">
+      <div class="logo">Anubhuti Mishra</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <canvas id="bg-canvas"></canvas>
+    <div class="hero-content">
+      <h1>Hi, I’m <span class="highlight">Anubhuti Mishra</span></h1>
+      <p>Developer & Student. Building beautiful digital experiences.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">My Projects</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Anubhuti Mishra, a passionate and dedicated web developer currently pursuing my Bachelor’s degree in Computer Applications. With a strong foundation in HTML, CSS, JavaScript, and Java, I love turning creative ideas into fully functional, user-friendly websites and applications.
+
+Although I am still in my graduation, I have already gained hands-on experience by building multiple projects, including responsive websites and interactive web apps. I enjoy learning new technologies and frameworks, and I am constantly pushing myself to improve my skills through practical coding challenges and real-world projects.
+
+I believe in writing clean, maintainable code that not only works perfectly but also delivers an exceptional user experience. My goal is to become a full-stack developer and contribute to innovative digital products that solve real problems and delight users.
+
+When I’m not coding, you can find me exploring tech blogs, contributing to open-source, or working on my GitHub portfolio to showcase my latest projects. I’m always excited to connect, collaborate, and grow with like-minded developers.
+
+Feel free to explore my projects below or check out my
+<a href="https://github.com/Anubhuti-codes" target="_blank" rel="noopener noreferrer" style="color:#c89ecf; text-decoration: underline;">GitHub</a>
+and
+<a href="https://www.linkedin.com/in/anubhuti-mishra-b12068303/" target="_blank" rel="noopener noreferrer" style="color:#c89ecf; text-decoration: underline;">LinkedIn</a>
+profiles to learn more about my work and achievements.
+    </p>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Savana Clone</h3>
+        <p>A clean, responsive fashion shopping app clone.</p>
+        <a href="https://savana-clone-by-anubhuti.netlify.app/" target="_blank" rel="noopener" class="link">View Project</a>
+        <a href="https://github.com/Anubhuti-Codes/clone-savana" target="_blank" rel="noopener" class="link">Code</a>
+      </article>
+      <article class="project-card">
+        <h3>Glow Guide</h3>
+        <p>Personalized skincare recommender app.</p>
+        <a href="https://glow-guide-by-anubhuti.netlify.app/" target="_blank" rel="noopener" class="link">View Project</a>
+        <a href="https://github.com/Anubhuti-Codes/glow-guide" target="_blank" rel="noopener" class="link">Code</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar"><div class="progress" data-level="90"></div></div>
+      </div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar"><div class="progress" data-level="85"></div></div>
+      </div>
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress-bar"><div class="progress" data-level="70"></div></div>
+      </div>
+      <div class="skill">
+        <p>Java</p>
+        <div class="progress-bar"><div class="progress" data-level="60"></div></div>
+      </div>
+      <div class="skill">
+        <p>Git & GitHub</p>
+        <div class="progress-bar"><div class="progress" data-level="50"></div></div>
+      </div>
+       <div class="skill">
+        <p>PHP</p>
+        <div class="progress-bar"><div class="progress" data-level="60"></div></div>
+      </div>
+       <div class="skill">
+        <p>C</p>
+        <div class="progress-bar"><div class="progress" data-level="90"></div></div>
+      </div>
+       <div class="skill">
+        <p>C++</p>
+        <div class="progress-bar"><div class="progress" data-level="60"></div></div>
+      </div>
+       <div class="skill">
+        <p>DSA</p>
+        <div class="progress-bar"><div class="progress" data-level="60"></div></div>
+      </div>
+       <div class="skill">
+        <p>Python</p>
+        <div class="progress-bar"><div class="progress" data-level="10"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" autocomplete="off">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Anubhuti Mishra</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
