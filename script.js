@@ -149,3 +149,5 @@ window.addEventListener('resize', () => {
 
 initCircles();
 animateCircles();
+
+//end
