@@ -31,18 +31,7 @@ Contact Form: Enabling visitors to reach out directly.
 🚀 Getting Started
 To run this project locally:
 
-Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/Anubhuti-codes/portfolio-anubhuti.git
-Navigate into the project directory:
-
-bash
-Copy
-Edit
-cd portfolio-anubhuti
 Open index.html in your preferred browser to view the website.
 
 📄 License
