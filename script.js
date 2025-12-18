@@ -82,12 +82,13 @@ window.addEventListener('load', animateSkills);
 // Contact form alert
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   const name = form.name.value.trim();
   const email = form.email.value.trim();
   const message = form.message.value.trim();
 
   if (!name || !email || !message) {
+      e.preventDefault();
+
     alert('Please fill out all fields');
     return;
   }
@@ -151,3 +152,4 @@ initCircles();
 animateCircles();
 
 //end
+
