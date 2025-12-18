@@ -289,7 +289,7 @@ body {
 }
 
 /* Contact */
-.contact form {
+.contact  {
   max-width: 400px;
   margin: 0 auto;
   display: flex;
@@ -359,3 +359,4 @@ footer {
     display: flex;
   }
 }
+
