@@ -290,7 +290,7 @@ body {
 
 /* Contact */
 .contact  {
-  max-width: 400px;
+  max-width: 4000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -359,4 +359,5 @@ footer {
     display: flex;
   }
 }
+
 
