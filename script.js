@@ -56,6 +56,17 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 window.addEventListener('resize', handleResize);
 window.addEventListener('load', handleResize);
 
+//Themes
+const toggleBtn = document.getElementById("themeToggle");
+const root = document.documentElement;
+
+toggleBtn.addEventListener("click", () => {
+  const isDark = root.getAttribute("data-theme") === "dark";
+  root.setAttribute("data-theme", isDark ? "light" : "dark");
+  toggleBtn.textContent = isDark ? "🌙" : "☀️";
+});
+
+
 // Animate skill bars on scroll
 const progressBars = document.querySelectorAll('.progress');
 
@@ -151,6 +162,7 @@ initCircles();
 animateCircles();
 
 //end
+
 
 
 
