@@ -80,7 +80,7 @@ window.addEventListener('scroll', animateSkills);
 window.addEventListener('load', animateSkills);
 
 // Contact form alert
-const form = document.getElementById('contact-form');
+const form = document.getElementById('contact');
 form.addEventListener('submit', (e) => {
   const name = form.name.value.trim();
   const email = form.email.value.trim();
@@ -152,4 +152,5 @@ initCircles();
 animateCircles();
 
 //end
+
 
