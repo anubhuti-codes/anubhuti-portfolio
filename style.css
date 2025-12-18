@@ -416,3 +416,157 @@ footer {
   outline: 2px solid rgba(200, 158, 207, 0.5);
   outline-offset: 2px;
 }
+/* ===== DARK MODE (PROFESSIONAL) ===== */
+
+body.dark {
+  background: #0f172a; /* slate-900 */
+  color: #e5e7eb;
+}
+
+/* Navbar */
+body.dark #navbar {
+  background: #020617;
+  box-shadow: none;
+}
+
+body.dark .logo,
+body.dark .nav-link {
+  color: #e5e7eb;
+}
+
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+  background: #1e293b;
+  color: #93c5fd;
+}
+
+/* Hero */
+body.dark .hero {
+  background: #0f172a;
+}
+
+body.dark .hero-content h1 {
+  color: #f8fafc;
+}
+
+body.dark .hero-content p {
+  color: #cbd5f5;
+}
+
+body.dark .highlight {
+  color: #60a5fa;
+}
+
+/* Buttons */
+body.dark .btn.primary {
+  background: #3b82f6;
+}
+
+body.dark .btn.secondary {
+  border-color: #60a5fa;
+  color: #cbd5f5;
+}
+
+body.dark .btn.secondary:hover {
+  background: #1e40af;
+}
+
+/* Sections */
+body.dark .section h2 {
+  color: #f1f5f9;
+}
+
+body.dark .section h2::after {
+  background: #3b82f6;
+}
+
+/* About / text */
+body.dark .about p {
+  color: #cbd5e1;
+}
+
+/* Projects */
+body.dark .project-card {
+  background: #020617;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+body.dark .project-card h3 {
+  color: #f8fafc;
+}
+
+body.dark .project-card p {
+  color: #cbd5e1;
+}
+
+/* Skills */
+body.dark .skill {
+  background: #020617;
+}
+
+body.dark .skill p {
+  color: #f1f5f9;
+}
+
+body.dark .progress {
+  background: #3b82f6;
+}
+
+/* Contact */
+body.dark .contact input,
+body.dark .contact textarea {
+  background: #020617;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+body.dark .contact button {
+  background: #3b82f6;
+}
+
+/* Footer */
+body.dark footer {
+  background: #020617;
+  color: #94a3b8;
+}
+/* ===== SUBTLE PROFESSIONAL ANIMATIONS ===== */
+
+/* Smooth page feel */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Hero entrance */
+.hero-content {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Project hover – subtle */
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Button micro-interaction */
+.btn,
+.contact button {
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn:hover,
+.contact button:hover {
+  transform: translateY(-2px);
+}
+
+/* Skill hover */
+.skill {
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+}
+
