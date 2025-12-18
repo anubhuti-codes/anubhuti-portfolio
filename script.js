@@ -94,7 +94,6 @@ form.addEventListener('submit', (e) => {
   }
 
   alert(`Thanks for reaching out, ${name}! I'll get back to you soon.`);
-  form.reset();
 });
 
 // Background floating circles animation on hero
@@ -152,5 +151,6 @@ initCircles();
 animateCircles();
 
 //end
+
 
 
