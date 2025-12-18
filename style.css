@@ -1,3 +1,22 @@
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --muted: #475569;
+  --accent: #2563eb;
+  --border: #e2e8f0;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #020617;
+  --text: #f1f5f9;
+  --muted: #cbd5e1;
+  --accent: #3b82f6;
+  --border: #334155;
+}
 /* Reset */
 * {
   margin: 0;
@@ -7,8 +26,8 @@
 }
 
 body {
-  background: #f8e7f1;
-  color: #4a4a4a;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
@@ -22,7 +41,7 @@ body {
 
 /* Navbar */
 #navbar {
-  background: white;
+  background: var(--surface);
   padding: 1rem 0;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
   position: sticky;
@@ -92,8 +111,8 @@ body {
   text-align: center;
   padding: 3rem 1rem;
   overflow: hidden;
-  color: #6a2c6c;
-  background: #f8e7f1;
+  background: var(--bg);
+  color: var(--text);
 }
 
 #bg-canvas {
@@ -120,13 +139,14 @@ body {
 }
 
 .highlight {
-  color: #c89ecf;
+  color: var(--accent);
+
 }
 
 .hero-content p {
   font-size: 1.15rem;
   margin-bottom: 2rem;
-  color: #8b5a8a;
+  color: var(--muted);
 }
 
 /* Buttons */
@@ -153,7 +173,7 @@ body {
 }
 
 .btn.primary:hover {
-  background-color: #ad4f8e;
+  background: var(--accent);
 }
 
 .btn.secondary {
@@ -187,7 +207,7 @@ body {
   content: '';
   width: 80px;
   height: 3px;
-  background: #c89ecf;
+  background: var(--accent);
   display: block;
   margin: 0.4rem auto 0 auto;
   border-radius: 2px;
@@ -196,7 +216,7 @@ body {
 /* About */
 .about p {
   font-size: 1.1rem;
-  color: #7b557f;
+  color: var(--muted);
   line-height: 1.8;
 }
 
@@ -221,7 +241,7 @@ body {
 }
 
 .project-card {
-  background: white;
+  background: var(--surface);
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 2px 12px rgba(176, 135, 188, 0.3);
@@ -239,7 +259,7 @@ body {
 }
 
 .project-card p {
-  color: #7b557f;
+  color: var(--muted);
   margin-bottom: 1rem;
   font-size: 1rem;
 }
@@ -259,7 +279,7 @@ body {
 }
 
 .skill {
-  background: white;
+  background: var(--surface);
   border-radius: 12px;
   padding: 1rem 1.5rem;
   width: 150px;
@@ -281,7 +301,7 @@ body {
 }
 
 .progress {
-  background-color: #c89ecf;
+  background: var(--accent);
   height: 100%;
   width: 0;
   border-radius: 10px;
@@ -326,7 +346,7 @@ body {
 }
 
 .contact button:hover {
-  background-color: #ad4f8e;
+  background: var(--accent);
 }
 
 /* Footer */
@@ -359,6 +379,28 @@ footer {
     display: flex;
   }
 }
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text);
+}
+.project-card,
+.skill {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover,
+.skill:hover {
+  transform: translateY(-4px);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+
 
 
 
