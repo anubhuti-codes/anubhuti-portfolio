@@ -3,7 +3,7 @@ Welcome to my personal portfolio website! This project serves as a digital showc
 
 🌐 Live Demo
 Experience the portfolio live:
-👉 https://portfolio-anubhuti.netlify.app/
+ https://portfolio-anubhuti.netlify.app/
 
 📌 Overview
 This portfolio website is designed to present my work and skills in a professional and engaging manner. Built with a clean, modern design, it offers a responsive layout that adapts seamlessly across devices.
