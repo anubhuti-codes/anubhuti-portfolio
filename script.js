@@ -1,4 +1,3 @@
-// Hamburger menu toggle and responsive nav handling
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -25,7 +24,7 @@ function showNavDesktop() {
   hamburger.setAttribute('aria-expanded', 'false');
 }
 
-// Initial nav display setup on page load & resize
+
 function handleResize() {
   if (isMobileView()) {
     hideNavMobile();
@@ -34,7 +33,6 @@ function handleResize() {
   }
 }
 
-// Toggle nav on hamburger click
 hamburger.addEventListener('click', () => {
   const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
   if (isExpanded) {
@@ -56,7 +54,7 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 window.addEventListener('resize', handleResize);
 window.addEventListener('load', handleResize);
 
-//Themes
+
 const toggleBtn = document.getElementById("themeToggle");
 const root = document.documentElement;
 
@@ -90,7 +88,6 @@ function animateSkills() {
 window.addEventListener('scroll', animateSkills);
 window.addEventListener('load', animateSkills);
 
-// Contact form alert
 const form = document.getElementById('contact');
 form.addEventListener('submit', (e) => {
   const name = form.name.value.trim();
@@ -107,7 +104,6 @@ form.addEventListener('submit', (e) => {
   alert(`Thanks for reaching out, ${name}! I'll get back to you soon.`);
 });
 
-// Background floating circles animation on hero
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 let circles = [];
@@ -160,8 +156,3 @@ window.addEventListener('resize', () => {
 
 initCircles();
 animateCircles();
-
-
-
-
-
